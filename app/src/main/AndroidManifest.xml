@@ -9,13 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+    <activity android:name=".Dashboard" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.myfirstapp.LoginActivity" />
+        <activity android:name="com.example.myfirstapp.PWresetActivity"></activity>
+        <activity android:name="com.example.myfirstapp.activitiesmoodstate.MainActivity" />
+        <activity android:name="com.example.myfirstapp.activitiesmoodstate.NormalSmiley" />
+        <activity android:name="com.example.myfirstapp.activitiesmoodstate.SuperHappySmiley" />
+        <activity android:name="com.example.myfirstapp.activitiesmoodstate.DisappointedSmiley" />
+        <activity android:name="com.example.myfirstapp.activitiesmoodstate.SadSmiley" />
+        <activity android:name="com.example.myfirstapp.activitiesrest.MoodHistory" />
+        <activity android:name="com.example.myfirstapp.activitiesrest.PieChartActivity" />
+
+        <receiver android:name="com.example.myfirstapp.broadcastreceiver.BroadcastDataUpdate"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+
     </application>
 
 </manifest>

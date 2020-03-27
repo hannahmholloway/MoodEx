@@ -1,3 +1,77 @@
 <resources>
-    <string name="app_name">My First App</string>
+    <string name="usernameReg" translatable="false">Username</string>
+    <string name="emailReg" translatable="false">Email</string>
+    <string name="passwordReg" translatable="false">Password</string>
+    <string name="confirmPasswordReg" translatable="false">Confirm Password</string>
+    <string name="passwordRestrictions" translatable="false">Must be 8 characters long, contain one uppercase letter, one lowercase letter, and a number</string>
+    <string name="register_btn" translatable="false">Register</string>
+    <string name="firstNameReg" translatable="false">First Name</string>
+    <string name="sign_upReg" translatable="false">Sign up</string>
+    <string name="sign_inLog" translatable="false">Sign in</string>
+    <string name="signin_redirect" translatable="false">Already a member? Sign in!</string>
+    <string name="forgot_password" translatable="false">Forgot password?</string>
+    <string name="signup_redirect" translatable="false">Don\'t have an account? Register here!</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_speech_game" translatable="false">SpeechGame</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <!-- GENERAL STRINGS -->
+    <string name="app_name">Mood Tracker</string>
+    <string name="toast_swipe_to_change">Swipe left and right to change between happiness!</string>
+    <string name="mood_history_button">Mood History Button</string>
+    <string name="custom_note_button">Custom Note Button</string>
+    <string name="smiley_face_button">Smiley Face Button</string>
+    <string name="smiley_happy_face_button" />
+    <string name="smiley_disappointed_face_button" />
+    <string name="smiley_normal_face_button" />
+    <string name="smiley_sad_face_button" />
+    <string name="smiley_super_happy_face_button" />
+
+    <!-- ALERT DIALOG BOX -->
+    <string name="alert_dialog_box_title">Title of Alert Dialog</string>
+    <string name="alert_dialog_box_text">Text of Alert Dialog</string>
+    <string name="alert_dialog_box_ok">SUBMIT</string>
+    <string name="alert_dialog_box_cancel">CANCEL</string>
+    <string name="comment_hint">Write here!</string>
+    <string name="alertDialogTitle">ADD A COMMENT!</string>
+
+    <!-- ALERT DIALOG ONCLICK BUTTONS -->
+    <string name="quotation_marks">"\""</string>
+    <string name="has_been_saved">"\""\ "has been saved</string>
+    <string name="fill_empty_space">Please, fill the empty space</string>
+    <string name="no_string_added">No comment was saved</string>
+
+    <!-- ONCLICK FACES' TOASTS -->
+    <string name="day_set_superhappy">Day state set to SUPER HAPPY :)) !!</string>
+    <string name="day_set_happy">Day state set to HAPPY :)</string>
+    <string name="day_set_normal">Day state set to NORMAL</string>
+    <string name="day_set_disappointed">Day state set to DISAPPOINTED :(</string>
+    <string name="day_set_sad">Day state set to SAD… :((</string>
+
+    <!-- ONCLICK HISTORY BUTTON TOAST -->
+    <string name="mood_history_toast">MOOD HISTORY</string>
+
+    <!-- MOOD HISTORY DELETE DIALOG -->
+    <string name="delete_history_title">Deleting all saved History</string>
+    <string name="delete_history_message">Are you sure you want to delete complete history?</string>
+    <string name="delete_history_positive_button">Yes, I am sure</string>
+    <string name="delete_history_negative_button">No</string>
+    <string name="delete_history_toast">History has been deleted</string>
+
+    <!-- MOOD HISTORY PIE CHART BUTTON -->
+    <string name="no_data_no_pie_chart">There is no data to show in a Pie Chart</string>
+    <string name="data_already_deleted">Data has been already deleted</string>
+
+    <!-- MOOD HISTORY BACK BUTTON -->
+    <string name="go_back_main_activity" translatable="false">Go back to Main Activity</string>
+
+    <!-- PIE CHART ACTIVITY BACK BUTTON -->
+    <string name="go_back_mood_history" translatable="false">Go back to Mood History</string>
+    <string name="title_pie_chart_activity" translatable="false">Mood Pie Chart</string>
+
+
 </resources>

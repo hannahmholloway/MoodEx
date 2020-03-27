@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#5b5b5b</color>
+    <color name="colorPrimary2">#008577</color>
+    <color name="colorPrimaryDark2">#00574B</color>
+    <color name="colorAccent2">#FFF173</color>
+    <color name="babyblueback">#CDEEF3</color>
+    <color name="purpleText">#420ED6</color>
+    <color name="pinkBack">#FFCAEA</color>
+    <color name="beige">#FACA91</color>
+    <color name="popup_background">#DD1F2833</color>
+    <color name="meaningBackground">#FFFFFF</color>
+    <color name="floatingButton">#ab47bc</color>
+    <color name="searchBackground">#FF9800</color>
+    <!-- Demo colors -->
+    <color name="turquoise_medium">#FF4ECDC4</color>
+    <color name="golden_tainoi">#FFFFBD55</color>
+    <color name="crusta">#FFFB8A61</color>
+    <color name="blue">#FF20A7C7</color>
+    <color name="orange">#fffaaa00</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="black_overlay">#66000000</color>
+    <!-- Background colors used for the different moods -->
+    <color name="faded_red">#ffde3c50</color>
+    <color name="warm_grey">#ff9b9b9b</color>
+    <color name="cornflower_blue_65">#a5468ad9</color>
+    <color name="light_sage">#ffb8e986</color>
+    <color name="banana_yellow">#fff9ec4f</color>
+
+
+
 </resources>
