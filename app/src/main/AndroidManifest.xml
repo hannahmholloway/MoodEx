@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myfirstapp">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +11,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-    <activity android:name=".Dashboard" >
+        <activity android:name=".Dashboard"/>
+        <activity android:name=".RegistrationActivity"/>
+        <activity android:name=".SplashScrActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.example.myfirstapp.LoginActivity" />
-        <activity android:name="com.example.myfirstapp.PWresetActivity"></activity>
+        <activity
+            android:name=".calorietracker.InputFood"
+            android:label="@string/title_activity_input_food"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".calorietracker.Statistics"
+            android:label="@string/title_activity_statistics"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Info"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".PWresetActivity"></activity>
+        <activity android:name=".calorietracker.CalorieActivity"/>
+        <activity android:name=".calorietracker.Bar"/>
+        <activity android:name=".calorietracker.BarGraph"/>
+        <activity android:name=".calorietracker.BarStackSegment"/>
+        <activity android:name=".calorietracker.FoodSearch"/>
+        <activity android:name=".calorietracker.Pair"/>
+        <activity android:name=".StepCounter"/>
+        <activity android:name=".cardiolog.LogActivity" />
+        <activity android:name="com.example.myfirstapp.cardiolog.ExerciseList" />
+        <activity android:name=".cardiolog.AddActivity"/>
+        <activity android:name=".cardiolog.SettingsActivity"/>
+        <activity android:name=".model.Exercise"/>
+        <activity android:name=".UserProfile"/>
+        <activity android:name=".model.LogEntry"/>
+        <activity android:name=".watertracker.HydrationSettingActivity"/>
+        <activity android:name=".watertracker.HydrationSettingActivity$SpinnerActivity"/>
+        <activity android:name=".watertracker.HydrationTrackerActivity"/>
+        <activity android:name=".watertracker.MainWaterActivity"/>
+        <activity android:name=".watertracker.ResetAppService"/>
+        <activity android:name=".watertracker.TimePickerFragment"/>
         <activity android:name="com.example.myfirstapp.activitiesmoodstate.MainActivity" />
         <activity android:name="com.example.myfirstapp.activitiesmoodstate.NormalSmiley" />
         <activity android:name="com.example.myfirstapp.activitiesmoodstate.SuperHappySmiley" />

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Treadmill Running",
+    "units": "Miles",
+    "precision": 0.05
+  },
+  {
+    "name": "Elliptical",
+    "units": "Miles",
+    "precision": 0.1
+  },
+  {
+    "name": "Stair Climber",
+    "units": "Floors",
+    "precision": 1
+  },
+  {
+    "name": "Rowing Machine",
+    "units": "Kilometers",
+    "precision": 0.01
+  },
+  {
+    "name": "Recumbent Bike",
+    "units": "Miles",
+    "precision": 0.1
+  },
+  {
+    "name": "Spinning",
+    "units": "Miles",
+    "precision": 0.1
+  },
+  {
+    "name": "Skiing",
+    "units": "Miles",
+    "precision": 10
+  },
+  {
+    "name": "Treadmill Walking",
+    "units": "Miles",
+    "precision": 0.01
+  },
+  {
+    "name": "Treadmill Hiking",
+    "units": "Miles",
+    "precision": 0.01
+  },
+  {
+    "name": "Yoga"
+  }
+
+]

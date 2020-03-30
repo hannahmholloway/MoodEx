@@ -23,7 +23,7 @@ import com.example.myfirstapp.database.DatabaseHelper;
 
 public class SadSmiley extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
-    /** To see comments about variables and methods, see MainActivity */
+    /** To see comments about variables and methods, see MainWaterActivity */
 
     GestureDetectorCompat mGestureDetector;
 

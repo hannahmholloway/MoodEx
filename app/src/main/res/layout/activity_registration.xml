@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background"
+    android:background="@drawable/cottoncandy"
     tools:context=".RegistrationActivity">
-
 
 
     <ScrollView
@@ -20,10 +19,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
-            >
+            android:orientation="vertical">
 
 
             <ImageView
@@ -31,12 +29,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
 
-                android:layout_marginBottom="55dp"
                 android:layout_marginTop="18dp"
+                android:layout_marginBottom="55dp"
                 android:contentDescription="TODO"
                 android:scaleType="fitCenter"
-                android:src="@drawable/logo" />
-
+                android:src="@drawable/moodlogo" />
 
 
             <ImageView
@@ -54,12 +51,12 @@
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_rect"
+                android:drawableStart="@drawable/icon_person"
                 android:drawableLeft="@drawable/icon_person"
                 android:drawablePadding="10dp"
-                android:drawableStart="@drawable/icon_person"
                 android:hint="@string/usernameReg"
-                android:paddingEnd="10dp"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/gray"
                 android:textSize="15sp" />
@@ -67,36 +64,35 @@
 
             <AutoCompleteTextView
                 android:id="@+id/atvEmailReg"
-                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_rect"
+                android:drawableStart="@drawable/icon_mail"
                 android:drawableLeft="@drawable/icon_mail"
                 android:drawablePadding="10dp"
-                android:drawableStart="@drawable/icon_mail"
                 android:hint="@string/emailReg"
-                android:paddingEnd="10dp"
+                android:inputType="textEmailAddress"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/gray"
                 android:textSize="15sp" />
 
 
-
             <AutoCompleteTextView
                 android:id="@+id/atvPasswordReg"
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_rect"
+                android:drawableStart="@drawable/icon_password"
                 android:drawableLeft="@drawable/icon_password"
                 android:drawablePadding="10dp"
-                android:drawableStart="@drawable/icon_password"
                 android:hint="@string/passwordReg"
-                android:paddingEnd="10dp"
+                android:inputType="textPassword"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/gray"
                 android:textSize="15sp" />
@@ -121,9 +117,7 @@
                 android:textColor="@color/gray" />
 
 
-
         </LinearLayout>
-
 
 
     </ScrollView>

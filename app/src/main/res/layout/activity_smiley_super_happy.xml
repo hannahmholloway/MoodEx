@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/banana_yellow"
-    tools:context="com.myfirstapp.android.myfirstapp.activitiesmoodstate.MainActivity">
+    tools:context=".activitiesmoodstate.MainActivity">
 
     <ImageButton
         android:id="@+id/super_happy_face_button"

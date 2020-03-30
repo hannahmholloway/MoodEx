@@ -20,7 +20,7 @@
     <string name="dummy_button" translatable="false">Dummy Button</string>
     <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
     <!-- GENERAL STRINGS -->
-    <string name="app_name">Mood Tracker</string>
+    <string name="app_name">Moodex</string>
     <string name="toast_swipe_to_change">Swipe left and right to change between happiness!</string>
     <string name="mood_history_button">Mood History Button</string>
     <string name="custom_note_button">Custom Note Button</string>
@@ -72,6 +72,154 @@
     <!-- PIE CHART ACTIVITY BACK BUTTON -->
     <string name="go_back_mood_history" translatable="false">Go back to Mood History</string>
     <string name="title_pie_chart_activity" translatable="false">Mood Pie Chart</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="random_exercise">Random Exercise</string>
+    <string name="title_activity_add">Add Exercise</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="saveButton">Save</string>
+    <string name="save_exercise">Save</string>
+    <string name="empty_exercise_list">No exercises found</string>
+    <string name="error_cannot_save_exercises">Unable to save exercises, SD card not mounted or unwritable.</string>
+    <string name="error_cannot_save_units">Unable to save units data, SD card not mounted or unwritable.</string>
+    <string name="error_cannot_save_log">Unable to save log, SD card not mounted or unwritable.</string>
+    <string name="title_exercise_list">Simple Cardio Log</string>
+    <string name="title_activity_log">Log</string>
+    <string name="undoButtonLabel">Undo</string>
+    <string name="exerciseNameHint">Exercise Name</string>
+    <string name="context_menu_log">Log</string>
+    <string name="context_menu_favorite">Favorite</string>
+    <string name="context_menu_unfavorite">Unfavorite</string>
+    <string name="context_menu_delete">Delete</string>
+    <string name="context_menu_edit">Edit</string>
+    <string name="addFavoriteCheckBoxLabel">Favorite</string>
+    <string name="doneCheckMark">✓</string>
+    <string name="noExercisesTitle">No Exercises!</string>
+    <string name="noExercisesMessage">Sorry, no exercises to choose from at random</string>
 
+    <string-array name="precision_array">
+        <item>0.01</item>
+        <item>0.05</item>
+        <item>0.1</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="measurementUnitLabel">Measures Units</string>
+    <string name="measurementUnitlessLabel">Unitless</string>
+    <string name="measurementPrecisionLabel">Measurement Increment:</string>
+    <string name="measurementUnitsLabel">Measurement Units:</string>
+    <string name="save_log_entry">Save Entry</string>
+    <string name="minutes_label">Minutes</string>
+    <string name="minutesLabel">Minutes</string>
+    <string name="unitsLabelText">Units</string>
+    <string name="caloriesLabelText">Calories</string>
+    <string name="logsLabel">History:</string>
+    <string name="first_time">Tell me about your hydration plan!</string>
+
+    <string name="state_key">state</string>
+    <string name="state_default">initial</string>
+    <string name="state_ready">ready</string>
+    <string name="state_set">set</string>
+
+    <string name="appReset">reset</string>
+    <string name="setNextNotification">next_notification</string>
+
+    <string name="bigText_glass">Drink!</string>
+    <string name="drink_water">NotificationDrinkWaterService</string>
+    <string name="bigText_updatePiechart">updatePiechart</string>
+
+    <string name="timepicker_state">timepicker_state</string>
+    <string name="timepicker_start">start</string>
+    <string name="timepicker_end">end</string>
+
+    <string name="notification_state">notification_state</string>
+    <string name="normal_notification">Notification with sound</string>
+    <string name="silent_notification">Silent notification</string>
+    <string name="no_notification">No notification</string>
+
+
+    <string name="start_hour">start_hour</string>
+    <string name="start_min">start_min</string>
+    <string name="end_hour">end_hour</string>
+    <string name="end_min">end_min</string>
+    <string name="notification_interval">notification_interval</string>
+    <string name="quantity">quantity</string>
+    <string name="glass_size">glass_size</string>
+    <string name="total_consumption">total_consumption</string>
+
+
+    <string-array name="notification_interval_array">
+        <item>1</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="glass_size_array">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="notification_array">
+        <item>@string/normal_notification</item>
+        <item>@string/silent_notification</item>
+        <item>@string/no_notification</item>
+    </string-array>
+
+    <string-array name="notification_name_array">
+        <item>normal</item>
+        <item>silent</item>
+        <item>no</item>
+    </string-array>
+
+    <string-array name="height_feet">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="height_in">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="activity_level">
+        <item>No exercise</item>
+        <item>Light exercise</item>
+        <item>Moderate exercise</item>
+        <item>Heavy exercise</item>
+        <item>Extreme exercise</item>
+    </string-array>
+    <string-array name="goal">
+        <item>Lose weight</item>
+        <item>Maintain weight</item>
+        <item>Gain weight</item>
+    </string-array>
+    <string-array name = "gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_input_food">InputFood</string>
+    <string name="title_activity_statistics">Statistics</string>
 
 </resources>
