@@ -1,5 +1,4 @@
 package com.example.myfirstapp.calorietracker;
-
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;

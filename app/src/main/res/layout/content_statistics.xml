@@ -38,7 +38,7 @@
         android:layout_toLeftOf="@+id/textView10"
         android:layout_toStartOf="@+id/textView10" />
 
-    <com.example.cameron.caloriecounter.BarGraph
+<com.example.myfirstapp.calorietracker.BarGraph
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:id="@+id/graph"

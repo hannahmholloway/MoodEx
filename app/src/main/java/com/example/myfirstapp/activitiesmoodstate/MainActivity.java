@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity
     GestureDetectorCompat mGestureDetector;
 
     //Variables for buttons
+    ImageButton image_button_normal_face;
+    ImageButton image_button_sad_face;
+    ImageButton image_button_super_happy_face;
+    ImageButton image_button_disappointed_face;
     ImageButton image_button_happy_face;
     ImageButton image_button_history;
     ImageButton image_button_add_note;

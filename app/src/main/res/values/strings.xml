@@ -20,7 +20,7 @@
     <string name="dummy_button" translatable="false">Dummy Button</string>
     <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
     <!-- GENERAL STRINGS -->
-    <string name="app_name">Moodex</string>
+    <string name="app_name">HydrationApp</string>
     <string name="toast_swipe_to_change">Swipe left and right to change between happiness!</string>
     <string name="mood_history_button">Mood History Button</string>
     <string name="custom_note_button">Custom Note Button</string>
@@ -116,6 +116,8 @@
     <string name="unitsLabelText">Units</string>
     <string name="caloriesLabelText">Calories</string>
     <string name="logsLabel">History:</string>
+
+
     <string name="first_time">Tell me about your hydration plan!</string>
 
     <string name="state_key">state</string>

@@ -10,8 +10,7 @@ import com.example.myfirstapp.R;
 
 import com.example.myfirstapp.activitiesmoodstate.MainActivity;
 import com.example.myfirstapp.calorietracker.CalorieActivity;
-import com.example.myfirstapp.cardiolog.ExerciseList;
-import com.example.myfirstapp.watertracker.MainWaterActivity;
+import com.example.myfirstapp.watertracker.HydrationTrackerActivity;
 
 
 public class Dashboard extends AppCompatActivity {
@@ -37,7 +36,7 @@ public class Dashboard extends AppCompatActivity {
             button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(Dashboard.this, MainWaterActivity.class);
+                Intent it = new Intent(Dashboard.this, HydrationTrackerActivity.class);
                 startActivity(it);
             }
         });

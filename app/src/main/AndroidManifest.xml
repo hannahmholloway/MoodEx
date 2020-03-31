@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".calorietracker.CalorieActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".calorietracker.InputFood"
             android:label="@string/title_activity_input_food"
@@ -28,30 +31,35 @@
         <activity
             android:name=".calorietracker.Statistics"
             android:label="@string/title_activity_statistics"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Info"/>
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".watertracker.MainWaterActivity" />
+        <activity
+            android:name=".watertracker.HydrationSettingActivity"
+            android:parentActivityName=".watertracker.MainWaterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".watertracker.MainWaterActivity"/>
+        </activity>
+        <activity android:name=".watertracker.HydrationTrackerActivity"/>
+        <service
+            android:name=".watertracker.StartNotificationService"
+            android:exported="false" />
+        <service
+            android:name=".watertracker.StopNotificationService"
+            android:exported="false" />
+        <service
+            android:name=".watertracker.ResetAppService"
+            android:exported="false" />
+        <service
+            android:name=".watertracker.NotificationDrinkWaterService"
+            android:exported="false"></service>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".PWresetActivity"></activity>
-        <activity android:name=".calorietracker.CalorieActivity"/>
-        <activity android:name=".calorietracker.Bar"/>
-        <activity android:name=".calorietracker.BarGraph"/>
-        <activity android:name=".calorietracker.BarStackSegment"/>
-        <activity android:name=".calorietracker.FoodSearch"/>
-        <activity android:name=".calorietracker.Pair"/>
         <activity android:name=".StepCounter"/>
-        <activity android:name=".cardiolog.LogActivity" />
-        <activity android:name="com.example.myfirstapp.cardiolog.ExerciseList" />
-        <activity android:name=".cardiolog.AddActivity"/>
-        <activity android:name=".cardiolog.SettingsActivity"/>
         <activity android:name=".model.Exercise"/>
         <activity android:name=".UserProfile"/>
         <activity android:name=".model.LogEntry"/>
-        <activity android:name=".watertracker.HydrationSettingActivity"/>
-        <activity android:name=".watertracker.HydrationSettingActivity$SpinnerActivity"/>
-        <activity android:name=".watertracker.HydrationTrackerActivity"/>
-        <activity android:name=".watertracker.MainWaterActivity"/>
-        <activity android:name=".watertracker.ResetAppService"/>
-        <activity android:name=".watertracker.TimePickerFragment"/>
         <activity android:name="com.example.myfirstapp.activitiesmoodstate.MainActivity" />
         <activity android:name="com.example.myfirstapp.activitiesmoodstate.NormalSmiley" />
         <activity android:name="com.example.myfirstapp.activitiesmoodstate.SuperHappySmiley" />
@@ -65,6 +73,18 @@
             android:exported="true">
         </receiver>
 
+        <service
+            android:name=".watertracker.StartNotificationService"
+            android:exported="false" />
+        <service
+            android:name=".watertracker.StopNotificationService"
+            android:exported="false" />
+        <service
+            android:name=".watertracker.ResetAppService"
+            android:exported="false" />
+        <service
+            android:name=".watertracker.NotificationDrinkWaterService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
