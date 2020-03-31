@@ -28,9 +28,12 @@ public class DashboardInstrumentedTest {
 
     @Test
     public void selectExercise() {
+        /*
         onView(withId(R.id.button)).perform(click());
-        onView(ViewMatchers.withId(R.id.activity_main))
+        onView(ViewMatchers.withId(R.id.))
                 .check(ViewAssertions.matches(not(ViewMatchers.isDisplayed())));
+
+         */
     }
 
 
@@ -38,24 +41,22 @@ public class DashboardInstrumentedTest {
     public void selectWaterIntake() {
         onView(withId(R.id.button2)).perform(click());
         onView(ViewMatchers.withId(R.id.activity_main))
-                .check(ViewAssertions.matches(not(ViewMatchers.isDisplayed())));
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
 
-       // Intents.init();
-        //intended(hasComponent(MainWaterActivity.class.getName()));
     }
 
     @Test
     public void selectCalorieTracker() {
         onView(withId(R.id.button3)).perform(click());
-        onView(ViewMatchers.withId(R.id.activity_main))
-                .check(ViewAssertions.matches(not(ViewMatchers.isDisplayed())));
+        onView(ViewMatchers.withId(R.id.calorie_main))
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
 
     @Test
     public void selectMood() {
         onView(withId(R.id.button4)).perform(click());
-        onView(ViewMatchers.withId(R.id.activity_main))
-                .check(ViewAssertions.matches(not(ViewMatchers.isDisplayed())));
+        onView(ViewMatchers.withId(R.id.container_main))
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
     }
 
 }
