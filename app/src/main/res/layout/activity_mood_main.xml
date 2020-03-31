@@ -5,71 +5,139 @@
     android:id="@+id/container_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cottoncandy"
-    tools:context="activitiesmoodstate.MainActivity">
-
-    <ImageButton
-        android:id="@+id/happy_face_button"
-        android:layout_width="257dp"
-        android:layout_height="230dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/smiley_happy_face_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087"
-        app:srcCompat="@drawable/smiley_happy" />
+    android:background="@drawable/babyblue"
+    tools:context=".activitiesmoodstate.MainActivity">
 
     <ImageButton
         android:id="@+id/custom_note_button_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="292dp"
-        android:layout_marginLeft="292dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginBottom="20dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/custom_note_button"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mood_history_button_main"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_note_add_black" />
 
     <ImageButton
         android:id="@+id/mood_history_button_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/mood_history_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/custom_note_button_main"
-        app:srcCompat="@drawable/ic_history_black" />
+        app:srcCompat="@drawable/ic_history_black"
+        android:layout_marginRight="16dp" />
+
+    <ImageButton
+        android:id="@+id/happy_face_button"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/smiley_happy_face_button"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/happyfinal" />
+
+    <ImageButton
+        android:id="@+id/sad_face_button"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/smiley_sad_face_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/awfulfinal" />
+
+    <ImageButton
+        android:id="@+id/super_happy_face_button"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginBottom="29dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/smiley_super_happy_face_button"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/disappointed_face_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sad_face_button"
+        app:srcCompat="@drawable/goofyfinal" />
+
+    <ImageButton
+        android:id="@+id/disappointed_face_button"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="68dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/smiley_disappointed_face_button"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/homebutton"
+        app:layout_constraintEnd_toStartOf="@+id/normal_face_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sadfinal" />
 
     <ImageButton
         android:id="@+id/normal_face_button"
-        android:layout_width="258dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="59dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/smiley_normal_face_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/mood_history_button_main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintTop_toBottomOf="@+id/super_happy_face_button"
+        app:layout_constraintVertical_bias="0.086"
+        app:srcCompat="@drawable/angryfinal" />
+
+    <Button
+        android:id="@+id/homebutton"
+        android:layout_width="65dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="418dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="1dp"
+        android:background="#00BCD4"
+        android:lineSpacingExtra="10sp"
+        android:text="      How do you feel today?"
+        android:textColor="#FBFCFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852"
-        app:srcCompat="@drawable/smiley_normal" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

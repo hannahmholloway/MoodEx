@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/babyblue"
     android:fitsSystemWindows="true"
-    tools:context=".calorietracker.Statistics"
-    android:background="#5A9BD5">
+    tools:context=".calorietracker.Statistics">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
