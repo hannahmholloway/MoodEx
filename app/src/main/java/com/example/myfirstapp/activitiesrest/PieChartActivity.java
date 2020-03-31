@@ -142,7 +142,7 @@ public class PieChartActivity extends AppCompatActivity{
         data.setValueTextColor(Color.BLACK);
 
         Legend legend = pieChart.getLegend();
-        legend.setEnabled(false);
+        legend.setEnabled(true);
         //legend.setFormSize(10f);
         //legend.setTextSize(12f);
         //legend.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);

@@ -33,7 +33,7 @@ public class MoodHistory extends AppCompatActivity {
     private RecyclerView.Adapter myAdapter;
     private RecyclerView.LayoutManager myLayoutManager;
 
-    DatabaseHelper dbH;
+    public DatabaseHelper dbH;
     Cursor mCursor;
 
     @Override

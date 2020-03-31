@@ -28,8 +28,7 @@ import com.example.myfirstapp.database.DatabaseValues;
 
 import java.util.Calendar;
 
-public class MainActivity extends AppCompatActivity
-        implements GestureDetector.OnGestureListener {
+public class MainActivity extends AppCompatActivity {
 
     //Variable for gesture detector
     GestureDetectorCompat mGestureDetector;
@@ -55,8 +54,6 @@ public class MainActivity extends AppCompatActivity
         dbH = new DatabaseHelper(this);
 
         //Gesture detector
-        this.mGestureDetector = new GestureDetectorCompat(this, this);
-
         /**
          * This code is used for creating the two tables of the database.
          * It will only run the first time the app is launched
@@ -91,25 +88,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
-                /** This code is used for generating a fade effect when the image button
-                 * is clicked
-                 * */
-                // get the center for the clipping circle
-                int cx = (image_button_happy_face.getLeft() + image_button_happy_face.getRight()) / 2;
-                int cy = (image_button_happy_face.getTop() + image_button_happy_face.getBottom()) / 2;
-
-                // get the final radius for the clipping circle
-                int dx = Math.max(cx, image_button_happy_face.getWidth() - cx);
-                int dy = Math.max(cy, image_button_happy_face.getHeight() - cy);
-                float finalRadius = (float) Math.hypot(dx, dy);
-
-                // Android native animator
-                Animator animator =
-                        ViewAnimationUtils.createCircularReveal(image_button_happy_face, cx, cy, 0, finalRadius);
-                animator.setInterpolator(new AccelerateDecelerateInterpolator());
-                animator.setDuration(500);
-                animator.start();
-
                 //Used for feedback to the user
                 Toast.makeText(MainActivity.this, getString(R.string.day_set_happy), Toast.LENGTH_LONG).show();
 
@@ -118,6 +96,7 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
 
         /** Tapping the mood history button will take the used to that activity
          * */
@@ -146,69 +125,68 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-    }
+        image_button_normal_face = findViewById(R.id.normal_face_button);
+        image_button_normal_face.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View v) {
 
-    /** When back button is pressed, there is a fade effect while returning to the
-     * previous activity
-     * */
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        MainActivity.this.overridePendingTransition(R.anim.fade_in,
-                R.anim.fade_out);
-    }
 
-    /** Allows to manage touch events
-     *  */
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        return this.mGestureDetector.onTouchEvent(event);
-        //return super.onTouchEvent(event);
-    }
+                Toast.makeText(MainActivity.this, getString(R.string.day_set_normal), Toast.LENGTH_SHORT).show();
 
-    /** Depending on the type of swipe
-     * the user will go to one activity or another */
-    @Override
-    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        if (e1.getX() - e2.getX() > 200) //to differentiate from a tap
-        {
-            Intent intent = new Intent(MainActivity.this, SuperHappySmiley.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
-        }
-        if (e1.getX() - e2.getX() < -200) //to differentiate from a tap
-        {
-            Intent intent = new Intent(MainActivity.this, NormalSmiley.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
-        }
-        return true;
-    }
+                dbH.updateDataDaysStateInToday(3);
 
-    @Override
-    public boolean onDown(MotionEvent e) {
-        return false;
-    }
+            }
+        });
 
-    @Override
-    public void onShowPress(MotionEvent e) {
 
-    }
 
-    @Override
-    public boolean onSingleTapUp(MotionEvent e) {
-        return false;
-    }
 
-    @Override
-    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        return false;
-    }
+        image_button_disappointed_face = findViewById(R.id.disappointed_face_button);
+        image_button_disappointed_face.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View v) {
 
-    @Override
-    public void onLongPress(MotionEvent e) {
+                Toast.makeText(MainActivity.this, getString(R.string.day_set_disappointed), Toast.LENGTH_SHORT).show();
+
+                dbH.updateDataDaysStateInToday(2);
+
+            }
+        });
+
+
+
+        image_button_sad_face = findViewById(R.id.sad_face_button);
+        image_button_sad_face.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(MainActivity.this, getString(R.string.day_set_sad), Toast.LENGTH_SHORT).show();
+
+                dbH.updateDataDaysStateInToday(1);
+
+            }
+        });
+
+
+        image_button_super_happy_face = findViewById(R.id.super_happy_face_button);
+        image_button_super_happy_face.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(MainActivity.this, getString(R.string.day_set_superhappy), Toast.LENGTH_LONG).show();
+
+                dbH.updateDataDaysStateInToday(5);
+
+            }
+        });
 
     }
+
+
 
     /** This method creates an alarm used to update
      * the information every day at midnight. It calls

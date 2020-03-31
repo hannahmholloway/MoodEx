@@ -4,104 +4,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgpurple"
+    android:background="@color/white"
     tools:context=".Dashboard">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="88dp"
+        android:background="#00BCD4"
+        android:text="minutes "
+        android:textColor="#F6F9FA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/count"
+        app:layout_constraintStart_toEndOf="@+id/tv_list_item2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="9dp"
-        android:text="Step count since reboot:"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/count"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="88dp"
+        android:background="#00BCD4"
+        android:text="steps"
+        android:textColor="#FCFDFD"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/count"
-        android:layout_width="102dp"
-        android:layout_height="59dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="62dp"
-        android:textColor="@android:color/white"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="88dp"
+        android:background="#00BCD4"
+        android:textColor="#FFFFFF"
         android:textSize="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="144dp"
         android:layout_height="144dp"
+        android:layout_marginTop="79dp"
         android:layout_marginEnd="236dp"
         android:layout_marginRight="236dp"
         android:layout_marginBottom="452dp"
         android:background="@drawable/mknb"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="144dp"
         android:layout_height="144dp"
+        android:layout_marginTop="79dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="452dp"
         android:background="@drawable/water"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="144dp"
         android:layout_height="144dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="228dp"
         android:layout_marginRight="228dp"
         android:layout_marginBottom="236dp"
         android:background="@drawable/vcc"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="144dp"
         android:layout_height="144dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginBottom="236dp"
         android:background="@drawable/mknn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="#00BCD4"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/btnsignin_gradient"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="                    Moodex Dashboard" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="298dp"
-        android:layout_height="41dp"
-        android:text="Moodex Dashboard"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="15dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="137dp"
-        android:layout_height="92dp"
-        android:background="@color/white"
-        android:text="Button"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="552dp" />
-
+        android:id="@+id/tv_list_item2"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="88dp"
+        android:background="#00BCD4"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
