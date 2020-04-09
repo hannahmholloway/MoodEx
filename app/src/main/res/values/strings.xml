@@ -223,5 +223,7 @@
     </string-array>
     <string name="title_activity_input_food">InputFood</string>
     <string name="title_activity_statistics">Statistics</string>
+    <string name="diet_reccomendations">Diet Reccomendations</string>
+    <string name="calorie_logging">Calorie Logging</string>
 
 </resources>
