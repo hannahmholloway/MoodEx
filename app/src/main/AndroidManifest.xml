@@ -67,6 +67,8 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name="com.example.myfirstapp.activitiesrest.MoodHistory" />
         <activity android:name="com.example.myfirstapp.activitiesrest.PieChartActivity" />
+        <activity android:name=".SelectActivity"/>
+        <activity android:name=".DietActivity"/>
 
         <receiver android:name="com.example.myfirstapp.broadcastreceiver.BroadcastDataUpdate"
             android:enabled="true"

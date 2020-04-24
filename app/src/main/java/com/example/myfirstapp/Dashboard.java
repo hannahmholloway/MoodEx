@@ -58,7 +58,7 @@ public class Dashboard extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(Dashboard.this, CalorieActivity.class);
+                Intent it = new Intent(Dashboard.this, SelectActivity.class);
                 startActivity(it);
             }
         });
