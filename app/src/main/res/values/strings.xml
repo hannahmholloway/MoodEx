@@ -225,5 +225,9 @@
     <string name="title_activity_statistics">Statistics</string>
     <string name="diet_recommendations">Diet Recommendations</string>
     <string name="calorie_logging">Calorie Logging</string>
+    <string name="dietary_description">      We recommend taking a look at the 2015 – 2020 Dietary Guidelines for Americans, as it is the most reliable source for choosing healthy food patterns, with accompanying regular physical activity, leads to a healthy lifestyle.</string>
+    <string name="dietary_link">
+        <a href="https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/">Learn More</a>
+    </string>
 
 </resources>

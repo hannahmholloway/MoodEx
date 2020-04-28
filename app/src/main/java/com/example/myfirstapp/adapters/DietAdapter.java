@@ -3,6 +3,8 @@ package com.example.myfirstapp.adapters;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,11 +48,12 @@ public class DietAdapter extends RecyclerView.Adapter<DietAdapter.DietHolder> {
 
     class DietHolder extends RecyclerView.ViewHolder {
 
-        private TextView title, desc;
+        private TextView title, desc, link;
         public DietHolder (View v) {
             super(v);
             title = v.findViewById(R.id.diet_itemTitle);
             desc = v.findViewById(R.id.diet_description);
+            link = v.findViewById(R.id.learn_more);
         }
 
 
@@ -58,6 +61,8 @@ public class DietAdapter extends RecyclerView.Adapter<DietAdapter.DietHolder> {
         public void setInfo (Diet diet) {
             title.setText(diet.getTitle());
             desc.setText(diet.getDescription());
+            link.setText(Html.fromHtml(diet.getLink()));
+            link.setMovementMethod(LinkMovementMethod.getInstance());
         }
     }
 

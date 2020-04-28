@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <!--
-    <include layout="@layout/diet_item"/>
-    -->
 
+    <TextView
+        android:id="@+id/dietaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:textSize="25sp"
+        android:text="Dietary Guidelines"
+        android:layout_gravity="center_horizontal">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dietaryDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dietary_description"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dietaryLM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:linksClickable="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/dietary_link">
+
+    </TextView>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/diet_rview"
