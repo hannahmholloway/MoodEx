@@ -1,86 +1,45 @@
-# Introduction
+# MoodEx
 
-This is a template for doing Android development using GitLab and [fastlane](https://fastlane.tools/).
-It is based on the tutorial for Android apps in general that can be found [here](https://developer.android.com/training/basics/firstapp/). 
-If you're learning Android at the same time, you can also follow along that
-tutorial and learn how to do everything all at once.
 
-# Reference links
+## What is MoodEx?
 
-- [GitLab CI Documentation](https://docs.gitlab.com/ee/ci/)
-- [Blog post: Android publishing with GitLab and fastlane](https://about.gitlab.com/2019/01/28/android-publishing-with-gitlab-and-fastlane/)
+Moodex incorporates step and active minute tracking algorithms. In addition, the application tracks the user’s daily mood and calorie intake, and, using this data, the user can monitor the correlation between his or her exercise, eating habits, and overall mood. In this project a Wellness App for Android devices is developed to track these factors.
 
-You'll definitely want to read through the blog post since that walks you in detail
-through a working production configuration using this model.
+## MoodEx’s Purpose
 
-# Getting started
+The purpose of MoodEx is to create a wellness application for the Android platform capable of tracking, recording, and displaying data relevant to a user’s activity, calorie, and mood habits. The overall goal is to show the user his or her daily habits and help them make choices that will result in a healthier lifestyle, and therefore, a happier life.
 
-First thing is to follow the [Android tutorial](https://developer.android.com/training/basics/firstapp/) and
-get Android Studio installed on your machine, so you can do development using
-the Android IDE. Other IDE options are possible, but not directly described or
-supported here. If you're using your own IDE, it should be fairly straightforward
-to convert these instructions to use with your preferred toolchain.
+## Problems which Moodex will solve:
 
-## What's contained in this project
+Making daily healthy choices is a challenge that every individual faces. These choices end up becoming daily habits that influence a person’s lifestyle. MoodEx will show the correlation between the user’s wellness choices and their mood. With this information, individuals will become aware of deficiencies in their everyday habits and will hopefully encourage the user to self-regulate towards improvement.
 
-### Android code
+## How will MoodEx improve the wellness of users?
 
-The state of this project is as if you followed the first few steps in the linked
-[Android tutorial](https://developer.android.com/training/basics/firstapp/) and
-have created your project. You're definitely going to want to open up the
-project and change the settings to match what you plan to build. In particular,
-you're at least going to want to change the following:
+MoodEx will facilitate a new process for individuals developing a healthy, happy lifestyle. Research has shown that increased exercise activity has positive effects on a person’s overall mood. More specifically, when a person exercises, they are improving their physical appearance due to becoming more physically fit, so exercise has a direct influence on a person’s self esteem.
 
-- Application Name: "My First App"
-- Company Domain: "example.com"
+## MoodEx’s Features & Functionalities:
 
-### Fastlane files
+ -   Step tracking
+    
+-   Active minutes
+    
+-   Workout logging
+    
+-   Calorie logging
 
-It also has fastlane setup per our [blog post](https://about.gitlab.com/2019/01/28/android-publishing-with-gitlab-and-fastlane/) on
-getting GitLab CI set up with fastlane. Note that you may want to update your
-fastlane bundle to the latest version; if a newer version is available, the pipeline
-job output will tell you.
+-   Diet recommendations
+    
+-   Mood data collection
+    
+-   Mood state avatar
 
-### Dockerfile build environment
+## Assumptions about the users
 
-In the root there is a Dockerfile which defines a build environment which will be
-used to ensure consistent and reliable builds of your Android application using
-the correct Android SDK and other details you expect. Feel free to add any
-build-time tools or whatever else you need here.
+ - -80% of users will see enough value in our application to become regular users
+    
+-   75% of users will improve their wellness within the first week
+    
+-   70% of users will recommend Moodex to their friends and family
 
-We generate this environment as needed because installing the Android SDK
-for every pipeline run would be very slow.
-
-### Gradle configuration
-
-The gradle configuration is exactly as output by Android Studio except for the
-version name being updated to 
-
-Instead of:
-
-`versionName "1.0"`
-
-It is now set to:
-
-`versionName "1.0-${System.env.VERSION_SHA}"`
-
-You'll want to update this for whatever versioning scheme you prefer.
-
-### Build configuration (`.gitlab-ci.yml`)
-
-The sample project also contains a basic `.gitlab-ci.yml` which will successfully 
-build the Android application.
-
-Note that for publishing to the test channels or production, you'll need to set
-up your secret API key. The stub code is here for that, but please see our
-[blog post](https://about.gitlab.com/2019/01/28/android-publishing-with-gitlab-and-fastlane/) for
-details on how to set this up completely. In the meantime, publishing steps will fail.
-
-The build script also handles automatic versioning by relying on the CI pipeline
-ID to generate a unique, ever increasing number. If you have a different versioning
-scheme you may want to change this.
-
-```yaml
-    - "export VERSION_CODE=$(($CI_PIPELINE_IID)) && echo $VERSION_CODE"
-    - "export VERSION_SHA=`echo ${CI_COMMIT_SHA:0:8}` && echo $VERSION_SHA"
-```
+## Assumptions about the users
+-   Moodex will work on Android 5.0.2 "Lollipop" and later.
